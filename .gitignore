@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+*.swp
+*.swo
+*.swl
+*.swm
+*.swn
+.vscode
+.goreleaser.yml
+.release-env
+
+# IDE
+.idea/
+*.iml
+*.yaml
+
