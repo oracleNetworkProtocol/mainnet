@@ -28,8 +28,8 @@ plugchaind version
 
 plugchaind init myNode --chain-id plugchain_520-1
 
-# Prepare genesis file for cosmoshub-4
-curl -o $HOME/.plugchain/config/genesis.json https://raw.githubusercontent.com/oracleNetworkProtocol/mainnet/main/v1/genesis.json
+# Prepare genesis file for plugchain_v1
+curl -o $HOME/.plugchain/config/genesis.json https://raw.githubusercontent.com/oracleNetworkProtocol/mainnet/main/version/v1/genesis.json
 
 #Set minimum gas price & peers
 sed -i 's/minimum-gas-prices = "0uplugcn"/minimum-gas-prices = "0.0001uplugcn"/' $HOME/.plugchain/config/app.toml
@@ -54,6 +54,7 @@ Next, your node will perform all chain upgrade procedures. Between each upgrade,
 | [v1.0](https://www.plugchain.network/v2/communityDetail?id=7)  |  3000000     |    | [v1.1.0](https://github.com/oracleNetworkProtocol/plugchain/releases/tag/v1.1.0) |
 | [v1.2.1](https://www.plugchain.network/v2/communityDetail?id=8)  |  3349542     |  3576853  | [v1.2.1](https://github.com/oracleNetworkProtocol/plugchain/releases/tag/v1.2.1) |
 | [v1.5.0](https://www.plugchain.network/v2/communityDetail?id=9)  |  3935641     |  4152263  | [v1.5.0](https://github.com/oracleNetworkProtocol/plugchain/releases/tag/v1.5.0) |
+| [v1.5.0](https://www.plugchain.network/v2/communityDetail?id=10)  |  5420512     |  5633000  | [v1.5.0](https://github.com/oracleNetworkProtocol/plugchain/releases/tag/v1.7.0) |
 
 ## Upgrade to Validator Node
 
