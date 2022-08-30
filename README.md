@@ -30,11 +30,9 @@ plugchaind init myNode --chain-id plugchain_520-1
 
 # Prepare genesis file for plugchain_v1
 curl -o $HOME/.plugchain/config/genesis.json https://raw.githubusercontent.com/oracleNetworkProtocol/mainnet/main/version/v1/genesis.json
-
-#Set minimum gas price & peers
-sed -i 's/minimum-gas-prices = "0uplugcn"/minimum-gas-prices = "0.0001uplugcn"/' $HOME/.plugchain/config/app.toml
-
-sed -i 's/persistent_peers = ""/persistent_peers = "0b0a4f46635cd9434c517cd17062873860fad058@81.69.193.92:26656,da1b8323faa61c6b22496f29a959df6285c1aceb@81.68.111.159:26656,69078522f65d824d937b950e094554653171c21d@42.192.91.213:26656"/' $HOME/.plugchain/config/config.toml
+curl -o $HOME/.plugchain/config/app.toml https://raw.githubusercontent.com/oracleNetworkProtocol/mainnet/main/version/v1/app.toml
+curl -o $HOME/.plugchain/config/config.toml https://raw.githubusercontent.com/oracleNetworkProtocol/mainnet/main/version/v1/config.toml
+curl -o $HOME/.plugchain/config/client.toml https://raw.githubusercontent.com/oracleNetworkProtocol/mainnet/main/version/v1/client.toml
 
 # Configure State sync
 # cd $HOME/.plugchain/config
